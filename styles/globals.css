@@ -1,0 +1,20 @@
+/* if vs code shows warning , go to setting -> CSS> Lint:Unknown At Rules -> select ignore */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  background-color: black;
+  font-family: "Inter", sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.projectCard > div {
+  /* border-radius: 6px;
+  overflow: hidden; */
+}
