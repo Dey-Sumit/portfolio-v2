@@ -23,7 +23,7 @@ const ProjectsNavbar: FC<{
   active: string;
 }> = (props) => {
   return (
-    <nav className="sticky z-[25] flex items-center w-full h-16 bg-gray-900 top-0">
+    <nav className="sticky z-[25] flex items-center w-full h-16 bg-transparent top-0">
       <ul className="flex flex-wrap justify-center w-full my-6 space-x-4">
         <NavItem value="all" {...props} />
         <NavItem value="react" {...props} />

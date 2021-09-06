@@ -6,6 +6,14 @@ export interface Service {
   about: string;
 }
 
+
+export interface Experience {
+  company: string;
+  jobTitle: string;
+  timeline: string;
+  points: string[];
+}
+
 export interface Skill {
   Icon: IconType;
   name: string;

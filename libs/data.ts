@@ -2,7 +2,7 @@ import { RiComputerLine } from "react-icons/ri";
 import { FaServer } from "react-icons/fa";
 import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
-import { Project, Service, Skill } from "@libs/types";
+import { Experience, Project, Service, Skill } from "@libs/types";
 
 import { BsCircleFill } from "react-icons/bs";
 
@@ -117,18 +117,7 @@ export const projects: Project[] = [
     category: ["react"],
     description:
       "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
-    key_techs: ["React", "firebase", "Framer Motion"],
-  },
-
-  {
-    id: 1,
-    name: "Dev Talks",
-    image_path: "/images/dev.jpg",
-    deployed_url: "https://dev-talks.herokuapp.com/",
-    github_url: "https://github.com/Dey-Sumit/Dev-talks",
-    category: ["node", "mongo", "react"],
-    description: "Social Media app for developers who can share project,create posts,etc...",
-    key_techs: ["React", "Redux", "Node", "Express", "Mongo", "REST API", "Bootstrap"],
+    key_techs: ["React", "Firebase", "Framer Motion"],
   },
 
   {
@@ -143,28 +132,6 @@ export const projects: Project[] = [
     key_techs: ["React", "Node", "Express", "Socket", "Bootstrap"],
   },
 
-  {
-    id: 3,
-    name: "Tweeter Clone",
-    image_path: "/images/tweetme.jpg",
-    deployed_url: "http://sumaxtweetme.pythonanywhere.com/",
-    github_url: "https://github.com/Dey-Sumit/tweetme",
-    category: ["django", "react"],
-    description:
-      "First Django Project :) | Typical Social Media App where one can post,like ,comment etc",
-    key_techs: ["React", "Django", "Django REST API"],
-  },
-
-  {
-    id: 5,
-    name: "Color Classification using tf.js",
-    image_path: "/images/color.jpg",
-    deployed_url: "!#",
-    github_url: "https://github.com/Dey-Sumit/color-classification",
-    category: ["express"],
-    description: "Tried ML with JS :) | this app classifies a color using CNN algorithm in browser",
-    key_techs: ["Express", "TensorFlow.js", "Vanilla js"],
-  },
   {
     id: 6,
     name: "YouTube using YouTube ",
@@ -186,6 +153,36 @@ export const projects: Project[] = [
     category: ["react"],
     description:
       "o my goal replica where an user can keep an eye on his favorite club.This app will keep providing \n all the statistics of that club.all the fans can also chat ",
-    key_techs: ["React", "Redux", "Firebase Auth", "API", "Sass", "Bootstrap"],
+    key_techs: ["React", "Redux", "Firebase", "API", "Sass"],
+  },
+];
+
+export const experiences: Experience[] = [
+  {
+    company: "TCS",
+    jobTitle: "Frontend Developer Intern",
+    timeline: "July 2020 - Jan 2021",
+    points: [
+      "TCS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti mollitia sequi",
+      "TCS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti mollitia sequi,",
+    ],
+  },
+  {
+    company: "Freelancer",
+    jobTitle: "Freelance Web Developer",
+    timeline: "2020 - Present",
+    points: [
+      "Freelancer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti mollitia sequi",
+      "Freelancer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti mollitia sequi,",
+    ],
+  },
+  {
+    company: "YouTube",
+    jobTitle: "YouTuber @ Backbench Coder",
+    timeline: "August 2020 - Present",
+    points: [
+      "YouTuber Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti mollitia sequi",
+      "YouTuber Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti mollitia sequi,",
+    ],
   },
 ];

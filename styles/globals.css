@@ -7,14 +7,29 @@
 body {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
-  background-color: black;
+  /* background-color: #292d31; */
+  background: linear-gradient(to top right, #040404 0%, #292d31 100%);
   font-family: "Inter", sans-serif;
 }
 body::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
 
+.bg-gradient {
+  background: linear-gradient(to top right, #040404 0%, #292d31 100%);
+}
 .projectCard > div {
   /* border-radius: 6px;
   overflow: hidden; */
+}
+
+.text-stroke {
+  -webkit-text-stroke: 2px white;
+  /* text-stroke: 4px white; */
+}
+.angled-borders {
+  /* border: 10px solid; */
+  /* border-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 11' width='11' height='11'><g fill='%23489fe2'><rect width='1' height='5'/><rect y='6' width='1' height='5'/><rect x='10' y='6' width='1' height='5'/><rect x='10' width='1' height='5'/><rect width='5' height='1'/><rect y='10' width='5' height='1'/><rect x='6' y='10' width='5' height='1'/><rect x='6' width='5' height='1'/></g></svg>")
+    5; */
+  /* border-image: url("../public/Union.svg"); */
 }

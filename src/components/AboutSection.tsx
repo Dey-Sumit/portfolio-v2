@@ -1,17 +1,21 @@
+import { useState } from "react";
 import { BiRightArrow } from "react-icons/bi";
 
 const AboutSection = () => {
+  const [isCopied, setIsCopied] = useState(false);
   return (
-    <div className="flex flex-col items-center px-24 py-6 space-y-4 border">
-      <h3 className="text-xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas est ratione, minima esse
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas est ratione, minima esse
+    <div className="flex flex-col px-5 py-12 space-y-4 md:px-40 ">
+      <h3 className="text-[18px]  ">
+        Hi, I am Sumit . I build cool shits for web since 2017 :)
+        <br /> Fast forward to today, I am a self made web developer and a YouTuber @ Backbench
+        Coder.
       </h3>
-      <div className="grid w-full grid-cols-2 place-items-center">
+      <div className="grid w-full grid-cols-2 ">
         <div className="col-span-full md:col-span-1">
-          {/* add border triangele to highlight this section */}
+          {/* add border triangle to highlight this section */}
           <p className="mb-2">Here are a few technologies I've been working with recently:</p>
-          <div className="grid grid-cols-2 gap-4 place-items-center">
+
+          <div className="grid grid-cols-2 gap-3 text-sm md:place-items-center">
             <div className="space-y-3 col-span-full md:col-span-1">
               <div className="flex items-center space-x-2">
                 <BiRightArrow className="text-yellow-400" />
@@ -41,19 +45,21 @@ const AboutSection = () => {
               </div>
             </div>
           </div>
-          {/* <div>TypeScript </div>
-          <div>React Js</div>
-          <div>Next Js </div>
-          <div>React Native </div>
-          <div>Express Js</div>
-          <div>Tailwind Css</div> */}
         </div>
 
-        <div className="flex justify-center p-4 space-x-4 text-3xl text-gray-300 border border-dashed rounded-sm col-span-full md:col-span-1">
-          <span>Email : </span>
-          <div className="flex flex-col">
-            <span className="cursor-pointer">code.sumax@gmail.com</span>
-            <span className="text-sm text-right text-gray-400 cursor-pointer">click to copy!</span>
+        <div className="flex justify-center p-4 mt-4 space-x-4 text-xl text-gray-300 border border-dashed rounded-sm md:mt-0 md:text-3xl col-span-full md:col-span-1">
+          <span className="flex-none">Email : </span>
+          <div
+            className="flex flex-col cursor-pointer"
+            onClick={() => {
+              navigator.clipboard.writeText("code.sumax@gmail.com");
+              setIsCopied(true);
+            }}
+          >
+            <span className="">code.sumax@gmail.com</span>
+            <span className="text-sm text-right text-gray-400 ">
+              {isCopied ? "copied" : "click to copy!"}
+            </span>
           </div>
         </div>
       </div>

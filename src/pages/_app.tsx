@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   return (
-    <div className="text-white bg-black ">
+    <div className="text-white ">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

@@ -24,28 +24,21 @@ const ProjectsSection = () => {
   const [showDetail, setShowDetail] = useState<null | Number>(null);
 
   return (
-    <div className="w-full ">
+    <div className="w-full py-10">
+      <div className="flex items-center px-4 mb-6 space-x-2 md:px-40">
+        <h1 className="text-2xl font-bold text-yellow-400 ">Projects </h1>
+        <div className="flex-1 w-10 h-[1px] bg-yellow-400"> </div>
+      </div>
       <ProjectsNavbar handlerFilterCategory={handlerFilterCategory} active={active} />
       <motion.div
-        className="grid grid-cols-6 gap-12 px-20 mt-10"
+        className="grid grid-cols-6 gap-6 px-4 mt-10 md:gap-12 md:px-20"
         variants={stagger}
         initial="initial"
         animate="animate"
       >
-        {/* {projects.map((project) => (
-          <ProjectCard
-            project={project}
-            key={project.name}
-            setShowDetail={setShowDetail}
-            showDetail={showDetail}
-          />
-        ))} */}
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        {projects.map((project) => (
+          <Project {...project} />
+        ))}
       </motion.div>
     </div>
   );

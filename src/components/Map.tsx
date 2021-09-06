@@ -16,7 +16,7 @@ function Map() {
       // TODO env file
       mapboxApiAccessToken="pk.eyJ1IjoiYmFja2JlbmNoY29kZXIiLCJhIjoiY2tzemxza2N0MXg1czJ3czF1cjZ5ZnM5YiJ9.b2aNQv5l7o2cBrL_NLbWSg"
       {...viewport}
-      mapStyle="mapbox://styles/mapbox/dark-v9"
+      mapStyle="mapbox://styles/mapbox/dark-v10"
       //   mapStyle="mapbox://styles/backbenchcoder/ckszmptsl6w8g17qnjbv0092d"
       width="100%"
       height="100%"
