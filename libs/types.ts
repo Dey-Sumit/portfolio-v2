@@ -6,7 +6,6 @@ export interface Service {
   about: string;
 }
 
-
 export interface Experience {
   company: string;
   jobTitle: string;
@@ -22,8 +21,8 @@ export interface Skill {
 
 export interface Project {
   name: string;
-  description: string;
-  image_path: string;
+  points: string[];
+  image: StaticImageData;
   deployed_url: string;
   github_url: string;
   category: Category[];
@@ -31,4 +30,4 @@ export interface Project {
   id: number;
 }
 
-export type Category = "react" | "node" | "express" | "django" | "mongo";
+export type Category = "react" | "express" | "mongo" | "socket" | "tailwind" | "next";

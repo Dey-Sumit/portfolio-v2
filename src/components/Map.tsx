@@ -6,7 +6,7 @@ function Map() {
   const [viewport, setViewport] = useState({
     latitude: 22.572645,
     longitude: 88.363892,
-    zoom: 10,
+    zoom: 8,
   });
 
   const [popupInfo, setPopupInfo] = useState(false);
@@ -16,16 +16,17 @@ function Map() {
       // TODO env file
       mapboxApiAccessToken="pk.eyJ1IjoiYmFja2JlbmNoY29kZXIiLCJhIjoiY2tzemxza2N0MXg1czJ3czF1cjZ5ZnM5YiJ9.b2aNQv5l7o2cBrL_NLbWSg"
       {...viewport}
-      mapStyle="mapbox://styles/mapbox/dark-v10"
-      //   mapStyle="mapbox://styles/backbenchcoder/ckszmptsl6w8g17qnjbv0092d"
+      // mapStyle="mapbox://styles/mapbox/dark-v10"
+
+      mapStyle="mapbox://styles/backbenchcoder/ckszmptsl6w8g17qnjbv0092d"
       width="100%"
       height="100%"
       onViewportChange={(viewport) => setViewport(viewport)}
     >
       {/* <Pins data={CITIES} onClick={setPopupInfo} /> */}
-      <Marker latitude={22.572645} longitude={88.363892}>
+      <Marker latitude={22.5646} longitude={88.3433}>
         <FaMapMarkerAlt
-          className="w-6 h-6 text-yellow-400 cursor-pointer"
+          className="w-6 h-6 text-green-400 cursor-pointer"
           onClick={() => setPopupInfo(true)}
         />
       </Marker>

@@ -8,17 +8,17 @@
     "start": "next start"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "classnames": "^2.3.1",
-    "dagre": "^0.8.5",
     "framer-motion": "^4.1.17",
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-flow-renderer": "^9.6.6",
     "react-icons": "^4.2.0",
     "react-map-gl": "^6.1.16"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "@types/dagre": "^0.7.46",
     "@types/react": "^17.0.11",
     "autoprefixer": "^10.0.4",

@@ -9,7 +9,7 @@ const ExperienceCard: FC<Experience> = ({ points, company, jobTitle, timeline })
       <h6 className="mt-1 mb-4 text-base italic text-gray-300">{timeline}</h6>
       {points.map((point) => (
         <div className="flex items-center mb-2 space-x-4">
-          <BiRightArrow className="text-yellow-400" />
+          <BiRightArrow className="text-green-400" />
           <p className="">{point}</p>
         </div>
       ))}

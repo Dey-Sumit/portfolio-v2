@@ -3,14 +3,23 @@ import "@styles/globals.css";
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import Head from "next/head";
+import "aos/dist/aos.css";
+
+import AOS from "aos";
 function MyApp({ Component, pageProps }) {
   const [scrolled, setScrolled] = useState<boolean>();
   const [idleSeconds, setIdleSeconds] = useState(0);
 
   useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
+
+  useEffect(() => {
     let timer1 = setInterval(() => {
       setIdleSeconds((idleSeconds) => idleSeconds + 1);
-    }, 1000);
+    }, 500);
     return () => {
       clearTimeout(timer1);
     };
@@ -28,6 +37,7 @@ function MyApp({ Component, pageProps }) {
 
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
   return (
     <div className="text-white ">
       <Head>
@@ -38,7 +48,10 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
-      <AnimatePresence> {(!scrolled || idleSeconds > 1) && <Header />} </AnimatePresence>
+      <AnimatePresence>
+        {" "}
+        {(!scrolled || idleSeconds > 1) && <Header scrolled={scrolled} />}{" "}
+      </AnimatePresence>
       <Component {...pageProps} />
     </div>
   );

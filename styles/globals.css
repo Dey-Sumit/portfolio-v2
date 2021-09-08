@@ -1,15 +1,30 @@
 /* if vs code shows warning , go to setting -> CSS> Lint:Unknown At Rules -> select ignore */
 
+/* @import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-nato {
+  font-family: "Noto Serif", serif;
+}
+.font-hina {
+  font-family: "Hina Mincho", serif;
+}
+
+.direction-rtl {
+  direction: rtl;
+}
 
 body {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
   /* background-color: #292d31; */
+  font-family: "Noto Serif", serif;
   background: linear-gradient(to top right, #040404 0%, #292d31 100%);
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
 }
 body::-webkit-scrollbar {
   display: none; /* Safari and Chrome */

@@ -4,14 +4,16 @@ import { GrYoutube, GrJava, GrProjects } from "react-icons/gr";
 import { SiJavascript } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 import { IoMdGitNetwork } from "react-icons/io";
+import classNames from "classnames";
 
-const Header = () => {
+const Header = ({ scrolled }) => {
   return (
     <motion.header
       initial={{ y: -120 }}
       animate={{
         y: 0,
         transition: {
+          delay: 0.2,
           duration: 1,
           ease: "easeInOut",
         },
@@ -23,9 +25,11 @@ const Header = () => {
           ease: "easeInOut",
         },
       }}
-      className="fixed top-0 left-0 z-20 w-full py-4 shadow-lg bg-gradient h-14"
+      className={classNames("fixed top-0 left-0 z-20 w-full py-4 h-14", {
+        "shadow-lg bg-gradient": scrolled,
+      })}
     >
-      <nav className="flex items-center justify-around w-full uppercase ">
+      <nav className={classNames("flex items-center justify-around w-full uppercase")}>
         <ul className="flex justify-center flex-auto tracking-wide space-x-14 ">
           <li className="cursor-pointer">
             <AiFillHome className="block w-5 h-5 md:hidden" />
