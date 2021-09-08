@@ -3,18 +3,21 @@ import Contact from "@components/Contact";
 import Experience from "@components/Experience";
 import Hero from "@components/Hero";
 import SkillExSection from "@components/SkillExSection";
-import YouTube from "@components/YouTube";
+
 import ProjectsSection from "@components/ProjectsSection";
 import { motion } from "framer-motion";
+import YouTubeSection from "@components/YouTubeSection";
+import ContactSection from "@components/ContactSection";
 // import motion from 'framer-motion'
 export default function Home() {
   return (
     <>
       <Hero />
       <AboutSection />
-
       <ProjectsSection />
       <Experience />
+      <YouTubeSection />
+      <ContactSection />
     </>
   );
 }

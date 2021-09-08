@@ -31,3 +31,12 @@ export interface Project {
 }
 
 export type Category = "react" | "express" | "mongo" | "socket" | "tailwind" | "next";
+
+export interface Youtube {
+  id: number;
+  title: string;
+  image: StaticImageData;
+  youtubeLink: string;
+  views: string;
+  likes: string;
+}

@@ -13,8 +13,8 @@ const ProjectCardBig: FC<Project> = ({
 }) => {
   return (
     <div className="flex flex-col space-y-6 md:space-x-8 md:space-y-0 sm:flex-row sm:even:flex-row-reverse ">
-      <div className="flex-1 ">
-        <Image width="" height="" src={image} quality={100} objectFit="contain" />
+      <div className="flex-1 border-gray-400 nextImage">
+        <Image width="" height="" src={image} quality={100} objectFit="contain" className="" />
       </div>
       <div className="flex flex-col flex-1 space-y-6 ">
         <h1 className="text-xl sm:text-2xl">{name} </h1>

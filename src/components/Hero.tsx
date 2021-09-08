@@ -36,7 +36,10 @@ const Hero = () => {
           >
             Full Stack Web Developer
           </motion.p>
-          <motion.h1 variants={fadeIn("up")} className="mb-4 text-5xl font-semibold md:text-8xl">
+          <motion.h1
+            variants={fadeIn("up")}
+            className="mb-4 text-5xl font-semibold sm:text-7xl md:text-8xl"
+          >
             Sumit <span className="text-black text-stroke">Dey</span>{" "}
           </motion.h1>
           {/* / YouTuber@BackbenchCoder */}
@@ -83,7 +86,7 @@ const Hero = () => {
         animate="animate"
         initial="initial"
         variants={borderAnimation}
-        className="grid m-10 mt-0 overflow-hidden border-2 border-[#040404] border-opacity-10 shadow-md md:mt-4 rounded-xl col-span-full md:col-span-2 place-items-center"
+        className="grid m-10 mt-0 overflow-hidden border-4 border-gray-200 border-opacity-5 md:mt-4 rounded-xl col-span-full md:col-span-2 place-items-center"
       >
         <Map />
       </motion.div>

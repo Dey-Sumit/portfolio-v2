@@ -50,9 +50,10 @@ const ProjectsNavbar: FC<{
       <ul className="flex flex-wrap justify-center w-full my-4 space-x-4">
         <NavItem value="all" {...props} />
         <NavItem value="react" {...props} />
+        <NavItem value="next" {...props} />
         <NavItem value="mongo" {...props} />
-        <NavItem value="django" {...props} />
-        <NavItem value="node" {...props} />
+        <NavItem value="express" {...props} />
+        <NavItem value="socket" {...props} />
       </ul>
     </nav>
   );

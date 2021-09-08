@@ -17,6 +17,22 @@
 .direction-rtl {
   direction: rtl;
 }
+.mapboxgl-ctrl-logo,
+.mapboxgl-ctrl {
+  display: none !important;
+}
+.mapboxgl-popup-content {
+  background-color: #292d31 !important;
+  padding: 15px !important;
+}
+.mapboxgl-popup-close-button {
+  right: 10px !important;
+}
+
+.nextImage > div {
+  border: 1px solid rgba(83, 83, 83, 0.8) !important;
+  border-radius: 5px;
+}
 
 body {
   -ms-overflow-style: none; /* Internet Explorer 10+ */

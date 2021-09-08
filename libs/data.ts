@@ -2,10 +2,13 @@ import { RiComputerLine } from "react-icons/ri";
 import { FaServer } from "react-icons/fa";
 import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
-import { Experience, Project, Service, Skill } from "@libs/types";
+import { Experience, Project, Service, Skill, Youtube } from "@libs/types";
 import twitty from "@public/images/projects/twitty.png";
 import youTube from "@public/images/projects/youTube.png";
 import algorithm from "@public/images/projects/algorithm.png";
+import portfolio from "@public/images/youtube/portfolio.jpeg";
+import youtubeClone from "@public/images/youtube/youtubeClone.webp";
+import swr from "@public/images/youtube/swr.webp";
 // import youTube from "@public/images/projects/youTube.png";
 // import youTube from "@public/images/projects/youTube.png";
 
@@ -207,5 +210,32 @@ export const experiences: Experience[] = [
       "YouTuber Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti mollitia sequi",
       "YouTuber Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti mollitia sequi,",
     ],
+  },
+];
+
+export const youtubeVideos: Youtube[] = [
+  {
+    id: 1,
+    title: "YouTube Clone using React, Redux & YT API",
+    image: youtubeClone,
+    youtubeLink: "",
+    views: "25k+",
+    likes: "95%",
+  },
+  {
+    id: 2,
+    title: "A+ Developer Portfolio using Next Js , Tailwind and TypeScript",
+    image: portfolio,
+    youtubeLink: "",
+    views: "10k+",
+    likes: "100%",
+  },
+  {
+    id: 3,
+    title: "Advance Web Dev using SWR",
+    image: swr,
+    youtubeLink: "",
+    views: "1k+",
+    likes: "96%",
   },
 ];

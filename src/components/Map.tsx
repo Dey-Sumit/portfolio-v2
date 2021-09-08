@@ -40,7 +40,7 @@ function Map() {
           onClose={() => setPopupInfo(false)}
           // className="bg-red-500"
         >
-          <div className="w-48 bg-gray-900 border rounded-lg">
+          <div className="w-48 text-sm">
             I debug from here but I can change the marker if you want
           </div>
         </Popup>
