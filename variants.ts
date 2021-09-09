@@ -27,7 +27,7 @@ export const textContainer: Variants = {
   },
 };
 
-export const borderAnimation: Variants = {
+export const mapAnimation: Variants = {
   initial: {
     scale: 0,
     opacity: 0,
@@ -37,7 +37,8 @@ export const borderAnimation: Variants = {
     // borderWidth: 0,
     scale: 1,
     transition: {
-      duration: 0.8,
+      delay: 1.2,
+      duration: 1,
       // ease: [0.06, 0.69, 0.33, 0.97],
       ease: "easeOut",
     },

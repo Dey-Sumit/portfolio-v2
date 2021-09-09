@@ -1,8 +1,10 @@
 import { Project as IProject } from "@libs/types";
+import { motion } from "framer-motion";
 import { FC } from "react";
 import { AiOutlineFolder } from "react-icons/ai";
 import { BsFolder } from "react-icons/bs";
 import { FiExternalLink, FiFolder, FiGithub } from "react-icons/fi";
+import { fadeIn } from "variants";
 
 const Project: FC<IProject> = ({ deployed_url, category, points, github_url, key_techs, name }) => {
   const openLink = (url: string) => {
@@ -10,7 +12,11 @@ const Project: FC<IProject> = ({ deployed_url, category, points, github_url, key
   };
 
   return (
-    <div className="flex flex-col p-4 space-y-4 bg-[#040404] border border-gray-600 bg-gradient rounded-md shadow-xl col-span-full sm:col-span-3 md:col-span-2 projectCard">
+    <motion.div
+      variants={fadeIn("up")}
+      key={name}
+      className="flex flex-col p-4 space-y-4 bg-[#040404] border border-gray-600 bg-gradient rounded-md shadow-xl col-span-full sm:col-span-3 md:col-span-2 projectCard"
+    >
       <div className="flex items-center justify-between">
         <AiOutlineFolder className="w-10 h-10 text-green-400" />
         <div className="flex space-x-4 text-gray-300">
@@ -34,7 +40,7 @@ const Project: FC<IProject> = ({ deployed_url, category, points, github_url, key
           </span>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

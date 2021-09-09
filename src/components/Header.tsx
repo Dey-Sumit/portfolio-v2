@@ -10,27 +10,27 @@ import { FC } from "react";
 const Header: FC<{ scrolled: Boolean }> = ({ scrolled }) => {
   return (
     <motion.header
-      initial={{ y: -120 }}
+      initial={{ y: -100 }}
       animate={{
         y: 0,
         transition: {
-          delay: 0.2,
-          duration: 1,
+          delay: 1,
+          duration: 0.6,
           ease: "easeInOut",
         },
       }}
       exit={{
-        y: -120,
+        y: -100,
         transition: {
-          duration: 1,
+          duration: 0.6,
           ease: "easeInOut",
         },
       }}
-      className={classNames("fixed top-0 left-0 z-20 w-full py-4 h-14", {
+      className={classNames("fixed top-0 bg-red left-0 z-20 w-full py-4 h-14", {
         "shadow-lg bg-gradient": scrolled,
       })}
     >
-      <nav className={classNames("flex items-center justify-around w-full uppercase")}>
+      <nav className={classNames(" flex items-center justify-around w-full uppercase")}>
         <ul className="flex justify-center flex-auto tracking-wide space-x-14 ">
           <li className="cursor-pointer">
             <a href="#hero">

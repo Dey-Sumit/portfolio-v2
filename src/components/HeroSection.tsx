@@ -1,7 +1,7 @@
 import Map from "./Map";
 import { GiTie } from "react-icons/gi";
 import { motion, Variants } from "framer-motion";
-import { borderAnimation, fadeIn, textContainer } from "variants";
+import { mapAnimation, fadeIn, textContainer } from "variants";
 import { AiOutlineProfile } from "react-icons/ai";
 import { BsFileCode } from "react-icons/bs";
 import { useRef } from "react";
@@ -21,15 +21,9 @@ const pathVariants: Variants = {
     },
   },
 };
-const HeroSection = ({ heroSectionRef }) => {
-  const x = useRef<HTMLDivElement>();
-
+const HeroSection = () => {
   return (
-    <div
-      id="hero"
-      className="grid grid-cols-5 px-5 py-10 mt-0 md:mt-10 md:p-6 h-[90vh]"
-      ref={heroSectionRef}
-    >
+    <div id="hero" className="grid grid-cols-5 px-5 py-10 mt-0 md:pt-16 h-[90vh]">
       <div className="grid place-items-center col-span-full md:col-span-3">
         <motion.div
           className="flex flex-col justify-center "
@@ -92,7 +86,7 @@ const HeroSection = ({ heroSectionRef }) => {
       <motion.div
         animate="animate"
         initial="initial"
-        variants={borderAnimation}
+        variants={mapAnimation}
         className="grid m-0 mt-0 overflow-hidden border-4 border-gray-200 sm:m-10 border-opacity-5 md:mt-4 rounded-xl col-span-full md:col-span-2 place-items-center"
       >
         <Map />

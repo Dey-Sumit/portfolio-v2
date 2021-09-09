@@ -11,55 +11,20 @@ import ContactSection from "@components/ContactSection";
 import { MutableRefObject } from "react";
 import { NextPage } from "next";
 // import motion from 'framer-motion'
-type Props = {
-  aboutSectionRef: MutableRefObject<HTMLDivElement>;
-  projectSectionRef: MutableRefObject<HTMLDivElement>;
-  contactSectionRef: MutableRefObject<HTMLDivElement>;
-  youtubeSectionRef: MutableRefObject<HTMLDivElement>;
-  experienceSectionRef: MutableRefObject<HTMLDivElement>;
-  heroSectionRef: MutableRefObject<HTMLDivElement>;
-  scrolled: Boolean;
-};
-const Home: NextPage<Props> = ({
-  heroSectionRef,
-  aboutSectionRef,
-  projectSectionRef,
-  contactSectionRef,
-  youtubeSectionRef,
-  experienceSectionRef,
-}) => {
-  console.log("index", {
-    heroSectionRef,
-    aboutSectionRef,
-    projectSectionRef,
-    contactSectionRef,
-    youtubeSectionRef,
-    experienceSectionRef,
-  });
 
+const Home = () => {
   return (
     <>
-      <HeroSection heroSectionRef={heroSectionRef} />
-      <AboutSection aboutSectionRef={aboutSectionRef} />
-      <ProjectsSection projectSectionRef={projectSectionRef} />
-      <ExperienceSection experienceSectionRef={experienceSectionRef} />
-      <YouTubeSection youtubeSectionRef={youtubeSectionRef} />
-      <ContactSection contactSectionRef={contactSectionRef} />
-    </>
-  );
-};
-
-{
-  /* <motion.div
+      <motion.div
         className="fixed z-50 w-full h-screen "
         initial={{
           y: 0,
         }}
         animate={{
-          y: "-120%",
+          y: "-150%",
           transition: {
             duration: 1,
-            delay: 0.1,
+            delay: 0,
           },
         }}
       >
@@ -72,6 +37,20 @@ const Home: NextPage<Props> = ({
             d="M 800 300 Q 400 250 0 300 L 0 0 L 800 0 L 800 300 Z"
           ></path>
         </svg>
-      </motion.div> */
+      </motion.div>
+      <HeroSection />
+      <AboutSection />
+      <ProjectsSection />
+      <ExperienceSection />
+      <YouTubeSection />
+      <ContactSection />
+      {/*
+       */}
+    </>
+  );
+};
+
+{
+  /* */
 }
 export default Home;

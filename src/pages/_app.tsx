@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <div className="text-white ">
+    <div className="text-white bg-gradient">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

@@ -3,6 +3,9 @@ import { FiExternalLink } from "react-icons/fi";
 import Image from "next/image";
 import { FC } from "react";
 import { Youtube } from "@libs/types";
+import { motion } from "framer-motion";
+import { fadeInUp } from "@libs/variants";
+import { fadeIn } from "variants";
 
 const YouTubeCard: FC<Youtube> = ({ title, image, likes, youtubeLink, views }) => {
   const openLink = (url: string) => {
@@ -10,7 +13,10 @@ const YouTubeCard: FC<Youtube> = ({ title, image, likes, youtubeLink, views }) =
   };
 
   return (
-    <div className="flex flex-col p-4 space-y-4 bg-[#040404] border border-gray-600 bg-gradient rounded-md shadow-xl col-span-full sm:col-span-3 md:col-span-2 projectCard">
+    <motion.div
+      variants={fadeIn()}
+      className="flex flex-col p-4 space-y-4 bg-[#040404] border border-gray-600 bg-gradient rounded-md shadow-xl col-span-full sm:col-span-3 md:col-span-2 projectCard"
+    >
       <div className="flex items-center justify-between">
         <AiOutlineYoutube className="w-10 h-10 text-green-400" />
         <FiExternalLink className="w-6 h-6 cursor-pointer" onClick={() => openLink(youtubeLink)} />
@@ -24,7 +30,7 @@ const YouTubeCard: FC<Youtube> = ({ title, image, likes, youtubeLink, views }) =
         <span>Views : {views}</span>
         <span>Likes : {likes}</span>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

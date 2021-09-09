@@ -42,7 +42,7 @@ body {
   scrollbar-width: none; /* Firefox */
   /* background-color: #292d31; */
   font-family: "Noto Serif", serif;
-  background: linear-gradient(to top right, #040404 0%, #292d31 100%);
+  /* background: linear-gradient(to top right, #040404 0%, #292d31 100%); */
   /* font-family: "Inter", sans-serif; */
 }
 body::-webkit-scrollbar {

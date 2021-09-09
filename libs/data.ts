@@ -189,8 +189,8 @@ export const experiences: Experience[] = [
     jobTitle: "Frontend Developer Intern",
     timeline: "July 2020 - Jan 2021",
     points: [
-      "TCS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti mollitia sequi",
-      "TCS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti mollitia sequi,",
+      "Worked on an automation project using Selenium that checks the accuracy of tab orders of web elements",
+      "Created the frontend in .NET",
     ],
   },
   {
@@ -198,8 +198,8 @@ export const experiences: Experience[] = [
     jobTitle: "Freelance Web Developer",
     timeline: "2020 - Present",
     points: [
-      "Freelancer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti mollitia sequi",
-      "Freelancer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti mollitia sequi,",
+      "Working as a part-time freelancer from my 3rd of college",
+      "Successfully completed 4+ Projects",
     ],
   },
   {
@@ -207,8 +207,8 @@ export const experiences: Experience[] = [
     jobTitle: "YouTuber @ Backbench Coder",
     timeline: "August 2020 - Present",
     points: [
-      "YouTuber Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti mollitia sequi",
-      "YouTuber Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti mollitia sequi,",
+      "I love to teach because I love to learn!",
+      "I create content on Modern Web Development mainly using React and TypeScript",
     ],
   },
 ];
