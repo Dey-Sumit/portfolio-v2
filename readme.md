@@ -2,9 +2,9 @@
 
 ## Developer's resume the way it should be presented
 
-### Tech Used : Next Js, TypeScript, Tailwind, Framer Motion & Love
+#### Tech Used : Next Js, TypeScript, Tailwind, Framer Motion & Love
 
-![]()
+![](https://github.com/Dey-Sumit/portfolio-v2/blob/main/public/showcase.gif?raw=true)
 
 ## Installation & Run
 
@@ -13,18 +13,20 @@ npm install
 npm run dev
 ```
 
-## The project is deployed on Firebase :
+## The Portolio is deployed on Vercel :
 
-[Not-utube](https://not-utube.web.app/)
+[Dev Portofolio](https://portfolio-dey-sumit.vercel.app)
 
 ## TODO
 
-[ ] Get the YouTube Data from YouTube API
-[ ] Fix Animations Bug
-[ ] Add Husky
-[ ] Add Google Analytics
-[ ] Add More Content but still be minimalist
-[ ] Add Resume
+- [ ] Add my custom domain
+- [ ] Get the YouTube Data from YouTube API
+- [ ] Fix Animations Bug
+- [ ] Add Husky
+- [ ] Add Google Analytics
+- [ ] Add More Content but still be minimalist :)
+- [ ] Add Resume File
+- [ ] Add Blogs
 
 ## Contributing
 
