@@ -28,13 +28,18 @@ const HeroSection = () => {
           </motion.h1>
           {/* / YouTuber@BackbenchCoder */}
           <motion.div variants={fadeIn("up")} className="flex pl-1 mb-2 space-x-5">
-            <button className="flex items-center justify-center px-4 py-2 space-x-2 border border-gray-700 rounded-sm shadow-sm bg-[#292d31]">
+            <button
+              onClick={() => window.open("mailto:dev.sumitdey@gmail.com")}
+              className="flex items-center justify-center px-4 py-2 space-x-2 border border-gray-700 rounded-sm shadow-sm bg-[#292d31]"
+            >
               <GiTie />
               <span>Hire Me</span>
             </button>
             <button className="flex items-center justify-center px-4 py-2 space-x-2 border border-gray-700 rounded-sm shadow-sm bg-[#292d31]">
               <BsFileCode />
-              <span>Get Resume</span>
+              <a download="Sumit Dey Resume.pdf" href="/Sumit's Resume.pdf">
+                Get Resume
+              </a>
             </button>
           </motion.div>
           <motion.p

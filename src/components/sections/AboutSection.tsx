@@ -98,13 +98,13 @@ const AboutSection = () => {
             variants={fadeIn("up")}
             className="flex justify-center p-4 mt-4 space-x-4 text-base text-gray-300 border border-dashed rounded-sm cursor-pointer md:mt-0 md:text-3xl col-span-full md:col-span-1"
             onClick={() => {
-              navigator.clipboard.writeText("code.sumax@gmail.com");
+              navigator.clipboard.writeText("dev.sumitdey@gmail.com");
               setIsCopied(true);
             }}
           >
             <span className="flex-none ">Email : </span>
             <div className="flex flex-col cursor-pointer">
-              <span className="">code.sumax@gmail.com</span>
+              <span className="">dev.sumitdey@gmail.com</span>
               <span className="text-sm text-right text-gray-400 ">
                 {isCopied ? "copied" : "click to copy!"}
               </span>
