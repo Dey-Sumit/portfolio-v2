@@ -13,19 +13,19 @@ npm install
 npm run dev
 ```
 
-## The Portolio is deployed on Vercel :
+## The Portfolio is deployed on Vercel :
 
-[Dev Portofolio](https://portfolio-dey-sumit.vercel.app)
+[Dev Portfolio](https://sumitdey.tech)
 
 ## TODO
 
-- [ ] Add my custom domain
+- [x] Add my custom domain
 - [ ] Get the YouTube Data from YouTube API
 - [ ] Fix Animations Bug
 - [ ] Add Husky
 - [ ] Add Google Analytics
 - [ ] Add More Content but still be minimalist :)
-- [ ] Add Resume File
+- [x] Add Resume File
 - [ ] Add Blogs
 
 ## Contributing
