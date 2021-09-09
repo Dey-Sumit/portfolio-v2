@@ -8,16 +8,11 @@ html {
   scroll-behavior: smooth;
 }
 
-.font-nato {
-  font-family: "Noto Serif", serif;
-}
-.font-hina {
-  font-family: "Hina Mincho", serif;
-}
-
 .direction-rtl {
   direction: rtl;
 }
+
+/* mapbox customizations */
 .mapboxgl-ctrl-logo,
 .mapboxgl-ctrl {
   display: none !important;

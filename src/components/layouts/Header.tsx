@@ -1,6 +1,6 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { AiFillHome } from "react-icons/ai";
-import { GrYoutube, GrJava, GrProjects } from "react-icons/gr";
+import { GrYoutube } from "react-icons/gr";
 import { SiJavascript } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 import { IoMdGitNetwork } from "react-icons/io";
@@ -68,10 +68,5 @@ const Header: FC<{ scrolled: Boolean }> = ({ scrolled }) => {
     </motion.header>
   );
 };
-{
-  /* <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> */
-}
-// font-family: 'Inter', sans-serif;
+
 export default Header;

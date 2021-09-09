@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn } from "@libs/variants";
 import classNames from "classnames";
+import { FiExternalLink, FiGithub } from "react-icons/fi";
 type Props = {
   project: Project;
   reverse?: Boolean;
@@ -11,8 +12,11 @@ type Props = {
 // TODO add deployed ang gh links
 const ProjectCardBig: FC<Props> = ({
   reverse,
-  project: { category, deployed_url, points, github_url, image, name, key_techs },
+  project: { deployed_url, points, github_url, image, name, key_techs },
 }) => {
+  const openLink = (url: string) => {
+    window.open(url, "_blank");
+  };
   return (
     <motion.div
       variants={fadeIn("up")}
@@ -38,6 +42,13 @@ const ProjectCardBig: FC<Props> = ({
               {tech}
             </span>
           ))}
+        </div>
+        <div className="flex space-x-4 text-gray-300">
+          <FiGithub className="w-6 h-6 cursor-pointer" onClick={() => openLink(github_url)} />
+          <FiExternalLink
+            className="w-6 h-6 cursor-pointer"
+            onClick={() => openLink(deployed_url)}
+          />
         </div>
       </div>
     </motion.div>
