@@ -1,26 +1,53 @@
 import AboutSection from "@components/AboutSection";
 import Contact from "@components/Contact";
-import Experience from "@components/Experience";
-import Hero from "@components/Hero";
+import ExperienceSection from "@components/Experience";
+import HeroSection from "@components/HeroSection";
 import SkillExSection from "@components/SkillExSection";
 
 import ProjectsSection from "@components/ProjectsSection";
 import { motion } from "framer-motion";
 import YouTubeSection from "@components/YouTubeSection";
 import ContactSection from "@components/ContactSection";
+import { MutableRefObject } from "react";
+import { NextPage } from "next";
 // import motion from 'framer-motion'
-export default function Home() {
+type Props = {
+  aboutSectionRef: MutableRefObject<HTMLDivElement>;
+  projectSectionRef: MutableRefObject<HTMLDivElement>;
+  contactSectionRef: MutableRefObject<HTMLDivElement>;
+  youtubeSectionRef: MutableRefObject<HTMLDivElement>;
+  experienceSectionRef: MutableRefObject<HTMLDivElement>;
+  heroSectionRef: MutableRefObject<HTMLDivElement>;
+  scrolled: Boolean;
+};
+const Home: NextPage<Props> = ({
+  heroSectionRef,
+  aboutSectionRef,
+  projectSectionRef,
+  contactSectionRef,
+  youtubeSectionRef,
+  experienceSectionRef,
+}) => {
+  console.log("index", {
+    heroSectionRef,
+    aboutSectionRef,
+    projectSectionRef,
+    contactSectionRef,
+    youtubeSectionRef,
+    experienceSectionRef,
+  });
+
   return (
     <>
-      <Hero />
-      <AboutSection />
-      <ProjectsSection />
-      <Experience />
-      <YouTubeSection />
-      <ContactSection />
+      <HeroSection heroSectionRef={heroSectionRef} />
+      <AboutSection aboutSectionRef={aboutSectionRef} />
+      <ProjectsSection projectSectionRef={projectSectionRef} />
+      <ExperienceSection experienceSectionRef={experienceSectionRef} />
+      <YouTubeSection youtubeSectionRef={youtubeSectionRef} />
+      <ContactSection contactSectionRef={contactSectionRef} />
     </>
   );
-}
+};
 
 {
   /* <motion.div
@@ -47,3 +74,4 @@ export default function Home() {
         </svg>
       </motion.div> */
 }
+export default Home;

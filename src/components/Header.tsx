@@ -5,8 +5,9 @@ import { SiJavascript } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 import { IoMdGitNetwork } from "react-icons/io";
 import classNames from "classnames";
+import { FC } from "react";
 
-const Header = ({ scrolled }) => {
+const Header: FC<{ scrolled: Boolean }> = ({ scrolled }) => {
   return (
     <motion.header
       initial={{ y: -120 }}
@@ -32,24 +33,35 @@ const Header = ({ scrolled }) => {
       <nav className={classNames("flex items-center justify-around w-full uppercase")}>
         <ul className="flex justify-center flex-auto tracking-wide space-x-14 ">
           <li className="cursor-pointer">
-            <AiFillHome className="block w-5 h-5 md:hidden" />
-            <span className="hidden md:block">Home</span>
+            <a href="#hero">
+              <AiFillHome className="block w-5 h-5 md:hidden" />
+              <span className="hidden md:block">Home</span>
+            </a>
           </li>
           <li className="cursor-pointer">
-            <IoMdGitNetwork className="block w-5 h-5 md:hidden" />
-            <span className="hidden md:block">Projects</span>
+            <a href="#about">
+              <SiJavascript className="block w-5 h-5 md:hidden" />
+              <span className="hidden md:block">About</span>
+            </a>
           </li>
           <li className="cursor-pointer">
-            <SiJavascript className="block w-5 h-5 md:hidden" />
-            <span className="hidden md:block">Skills</span>
+            <a href="#projects">
+              <IoMdGitNetwork className="block w-5 h-5 md:hidden" />
+              <span className="hidden md:block">Projects</span>
+            </a>
+          </li>
+
+          <li className="cursor-pointer">
+            <a href="#youtube">
+              <GrYoutube className="block w-5 h-5 md:hidden" />
+              <span className="hidden md:block">YouTube</span>
+            </a>
           </li>
           <li className="cursor-pointer">
-            <MdEmail className="block w-5 h-5 md:hidden" />
-            <span className="hidden md:block">Contacts</span>
-          </li>
-          <li className="cursor-pointer">
-            <GrYoutube className="block w-5 h-5 md:hidden" />
-            <span className="hidden md:block">YouTube</span>
+            <a href="#contacts">
+              <MdEmail className="block w-5 h-5 md:hidden" />
+              <span className="hidden md:block">Contacts</span>
+            </a>
           </li>
         </ul>
       </nav>

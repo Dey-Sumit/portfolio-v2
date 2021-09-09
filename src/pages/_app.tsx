@@ -1,7 +1,7 @@
 import Header from "@components/Header";
 import "@styles/globals.css";
 import { AnimatePresence } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Head from "next/head";
 import "aos/dist/aos.css";
 
@@ -9,12 +9,6 @@ import AOS from "aos";
 function MyApp({ Component, pageProps }) {
   const [scrolled, setScrolled] = useState<boolean>();
   const [idleSeconds, setIdleSeconds] = useState(0);
-
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-    });
-  }, []);
 
   useEffect(() => {
     let timer1 = setInterval(() => {
@@ -49,8 +43,7 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <AnimatePresence>
-        {" "}
-        {(!scrolled || idleSeconds > 1) && <Header scrolled={scrolled} />}{" "}
+        {(!scrolled || idleSeconds > 1) && <Header scrolled={scrolled} />}
       </AnimatePresence>
       <Component {...pageProps} />
     </div>

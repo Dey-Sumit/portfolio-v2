@@ -23,9 +23,11 @@ const ProjectCardBig: FC<Project> = ({
             <p key={i}>{point}</p>
           ))}
         </div>
-        <div className="flex flex-wrap space-x-4 text-sm text-green-400 sm:text-base">
+        <div className="flex flex-wrap text-sm text-green-400 sm:text-base">
           {key_techs.map((tech) => (
-            <span key={tech}>{tech}</span>
+            <span key={tech} className="p-[3px] m-[1.5px]">
+              {tech}
+            </span>
           ))}
         </div>
       </div>

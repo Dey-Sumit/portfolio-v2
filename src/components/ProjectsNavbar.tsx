@@ -9,7 +9,7 @@ type Props = {
 };
 
 export const NavItem: FC<Props> = ({ value, handlerFilterCategory, active }) => {
-  let className = "text-lg capitalize cursor-pointer hover:text-green";
+  let className = "capitalize cursor-pointer hover:text-green";
   if (active === value) className += " text-green";
 
   return (
@@ -37,7 +37,6 @@ const ProjectsNavbar: FC<{
       window.removeEventListener("scroll", scrollHandler, true);
     };
   }, []);
-  console.log({ stickedToTop });
 
   return (
     <nav
@@ -47,7 +46,7 @@ const ProjectsNavbar: FC<{
         "bg-gradient": stickedToTop,
       })}
     >
-      <ul className="flex flex-wrap justify-center w-full my-4 space-x-4">
+      <ul className="flex justify-center w-full px-10 py-2 my-4 space-x-4 overflow-x-auto text:sm md:text-lg">
         <NavItem value="all" {...props} />
         <NavItem value="react" {...props} />
         <NavItem value="next" {...props} />

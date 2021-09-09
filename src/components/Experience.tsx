@@ -1,17 +1,16 @@
 import { experiences } from "@libs/data";
 import classNames from "classnames";
 import { useState } from "react";
-import { BiRightArrow } from "react-icons/bi";
 import ExperienceCard from "./ExperienceCard";
 import SectionContainer from "./SectionContainer";
 import SectionTitle from "./SectionTitle";
 
-const Experience = () => {
+const ExperienceSection = ({ experienceSectionRef }) => {
   const [selected, setSelected] = useState("TCS");
 
   return (
     // <div className="flex flex-col px-4 m-4 md:my-20 md:px-64">
-    <SectionContainer>
+    <SectionContainer sectionRef={experienceSectionRef}>
       <SectionTitle title="Experience" />
 
       <div className="flex mb-4 space-x-6 ">
@@ -48,4 +47,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default ExperienceSection;

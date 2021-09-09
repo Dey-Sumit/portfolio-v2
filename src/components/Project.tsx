@@ -27,9 +27,11 @@ const Project: FC<IProject> = ({ deployed_url, category, points, github_url, key
           <p key={i}>{point}</p>
         ))}
       </div>
-      <div className="flex flex-wrap space-x-4 font-light text-green-400 ">
+      <div className="flex flex-wrap text-sm font-light text-green-400 sm:text-base ">
         {key_techs?.map((tech) => (
-          <span key={tech}>{tech}</span>
+          <span className="p-[3px] m-[1.5px]" key={tech}>
+            {tech}
+          </span>
         ))}
       </div>
     </div>
