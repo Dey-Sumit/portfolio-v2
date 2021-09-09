@@ -14,7 +14,7 @@ type Props = {
 };
 
 const ProjectCard: FC<Props> = ({
-  project: { name, image_path, category, deployed_url, description, github_url, key_techs, id },
+  project: { name, image, category, deployed_url, points, github_url, key_techs, id },
   setShowDetail,
   showDetail,
 }) => {
@@ -69,9 +69,9 @@ const ProjectCard: FC<Props> = ({
             <motion.h2 variants={fadeInUp} className="mb-3 text-xl font-medium md:text-2xl ">
               {name}
             </motion.h2>
-            <motion.h3 variants={fadeInUp} className="my-3 text-base font-medium">
+            {/* <motion.h3 variants={fadeInUp} className="my-3 text-base font-medium">
               {description}
-            </motion.h3>
+            </motion.h3> */}
 
             <motion.div
               variants={fadeInUp}
