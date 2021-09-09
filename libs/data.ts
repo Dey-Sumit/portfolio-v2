@@ -1,120 +1,13 @@
-import { RiComputerLine } from "react-icons/ri";
-import { FaServer } from "react-icons/fa";
-import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
-import { MdDeveloperMode } from "react-icons/md";
-import { Experience, Project, Service, Skill, Youtube } from "@libs/types";
+import { Experience, Project, Youtube } from "@libs/types";
+
 import twitty from "@public/images/projects/twitty.png";
 import youTube from "@public/images/projects/youTube.png";
 import algorithm from "@public/images/projects/algorithm.png";
 import portfolio from "@public/images/youtube/portfolio.jpeg";
 import youtubeClone from "@public/images/youtube/youtubeClone.webp";
 import swr from "@public/images/youtube/swr.webp";
-// import youTube from "@public/images/projects/youTube.png";
-// import youTube from "@public/images/projects/youTube.png";
-
-import { BsCircleFill } from "react-icons/bs";
-
-export const services: Service[] = [
-  {
-    Icon: RiComputerLine,
-    title: "Frontend Development",
-    about:
-      "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
-  },
-  {
-    Icon: FaServer,
-    title: "Backend  Development",
-    about: "handle database, server, api using <b>Express </b> & other popular frameworks",
-  },
-  {
-    Icon: AiOutlineApi,
-    title: "API Development",
-    about: "I can develop robust  REST API using <b>django-rest-api</b>  & <b>Node API</b> ",
-  },
-  {
-    Icon: MdDeveloperMode,
-    title: "Competitive Coder",
-    about: "a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
-  },
-  {
-    Icon: AiOutlineAntDesign,
-    title: "UI/UX designer",
-    about: "stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
-  },
-  {
-    Icon: RiComputerLine,
-    title: "Whatever",
-    about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
-  },
-];
-
-export const languages: Skill[] = [
-  {
-    Icon: BsCircleFill,
-    name: "Python",
-    level: "45",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Java Script",
-    level: "60",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "React Native",
-    level: "80",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "React",
-    level: "70",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Django",
-    level: "80",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Bootstrap",
-    level: "80",
-  },
-];
-
-export const tools: Skill[] = [
-  {
-    Icon: BsCircleFill,
-    name: "Figma",
-    level: "85",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Photoshop",
-    level: "45",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Illustrator",
-    level: "60",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Framer",
-    level: "45",
-  },
-];
 
 export const projects: Project[] = [
-  // {
-  //   id: 0,
-  //   name: "COVID Tracker",
-  //   points: "This app shows a statistical view about corona virus over the world",
-  //   image: "/images/covid.jpg",
-  //   deployed_url: "https://covid-19-tracker-by-sumit.web.app/",
-  //   github_url: "https://github.com/Dey-Sumit/covid-19-tracker",
-  //   category: ["react"],
-  //   key_techs: ["React", "Chart.js", "Material UI"],
-  // },
   {
     id: 1,
     name: "Twitty : Social Media App",
@@ -122,11 +15,10 @@ export const projects: Project[] = [
       " • Fully functional twitter like MERN Stack Web App",
       " • Populated with authentication, Tweets, Tags, Follow, RealTime Notifications",
     ],
-    // points: "This app shows a statistical view about corona virus over the world",
     image: twitty,
     deployed_url: "https://covid-19-tracker-by-sumit.web.app/",
     github_url: "https://github.com/Dey-Sumit/covid-19-tracker",
-    category: ["react", "express", "next", "mongo", "tailwind"],
+    category: ["react", "express", "next", "mongo", "tailwind", "socket"],
     key_techs: ["React", "Socket", "Tailwind", "TypeScript", "Next", "Express", "REST"],
   },
   {
@@ -143,20 +35,8 @@ export const projects: Project[] = [
     key_techs: ["React", "Firebase", "Framer Motion"],
   },
 
-  // {
-  //   id: 2,
-  //   name: "Realtime Chat App",
-  //   image: "/images/chatapp.jpg",
-  //   deployed_url: "https://sumit-chat.netlify.app/",
-  //   github_url: "https://github.com/Dey-Sumit/chat-app-socket.io-react-node",
-  //   //TODO type on category
-  //   category: ["node", "react"],
-  //   points: "Basic Realtime Chat App where one can create a room can talk to each other",
-  //   key_techs: ["React", "Node", "Express", "Socket", "Bootstrap"],
-  // },
-
   {
-    id: 6,
+    id: 3,
     name: "Not YouTube : YouTube Clone",
     image: youTube,
     deployed_url: "https://not-utube.web.app/",
@@ -169,18 +49,46 @@ export const projects: Project[] = [
 
     key_techs: ["React", "Redux", "Firebase Auth", "YouTube API", "Sass", "Bootstrap"],
   },
-  // {
-  //   id: 9,
-  //   name: "Football App",
-  //   //TODO add image,github,dep url
-  //   image: "/images/football.png",
-  //   deployed_url: "https://o-my-goal.web.app/",
-  //   github_url: "https://github.com/Dey-Sumit/football-app",
-  //   category: ["react"],
-  //   points:
-  //     "o my goal replica where an user can keep an eye on his favorite club.This app will keep providing \n all the statistics of that club.all the fans can also chat ",
-  //   key_techs: ["React", "Redux", "Firebase", "API", "Sass"],
-  // },
+
+  {
+    id: 4,
+    name: "Realtime Chat App",
+    deployed_url: "https://sumit-chat.netlify.app/",
+    github_url: "https://github.com/Dey-Sumit/chat-app-socket.io-react-node",
+    //TODO type on category
+    category: ["express", "socket", "react"],
+    points: [
+      " • Basic Realtime Chat App where one can create a room can talk to each other",
+      " • working on the version_2 of this project",
+    ],
+    key_techs: ["React", "Node", "Express", "Socket", "Bootstrap"],
+  },
+  {
+    id: 5,
+    name: "COVID Tracker",
+    points: [
+      " • This app shows a statistical view about corona virus over the world",
+      " • One of the first projects on React 🙃",
+    ],
+
+    deployed_url: "https://covid-19-tracker-by-sumit.web.app/",
+    github_url: "https://github.com/Dey-Sumit/covid-19-tracker",
+    category: ["react"],
+    key_techs: ["React", "Chart.js", "Material UI"],
+  },
+  {
+    id: 6,
+    name: "Football App",
+
+    deployed_url: "https://o-my-goal.web.app/",
+    github_url: "https://github.com/Dey-Sumit/football-app",
+    category: ["react"],
+    points: [
+      " • O my goal replica where an user can keep an eye on his favorite club",
+      " • This app will keep providing all the statistics of that club , users can group chat",
+    ],
+    key_techs: ["React", "Redux", "Firebase", "API"],
+  },
 ];
 
 export const experiences: Experience[] = [

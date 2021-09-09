@@ -1,11 +1,3 @@
-import { FunctionComponent } from "react";
-import { IconType } from "react-icons";
-export interface Service {
-  Icon: IconType;
-  title: string;
-  about: string;
-}
-
 export interface Experience {
   company: string;
   jobTitle: string;
@@ -13,16 +5,10 @@ export interface Experience {
   points: string[];
 }
 
-export interface Skill {
-  Icon: IconType;
-  name: string;
-  level: string;
-}
-
 export interface Project {
   name: string;
   points: string[];
-  image: StaticImageData;
+  image?: StaticImageData;
   deployed_url: string;
   github_url: string;
   category: Category[];
