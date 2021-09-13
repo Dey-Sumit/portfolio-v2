@@ -23,7 +23,7 @@ const ProjectCardBig: FC<Props> = ({
       className="flex flex-col space-y-6 md:space-x-8 md:space-y-0 sm:flex-row sm:even:flex-row-reverse "
     >
       <div className={classNames("flex-1 border-gray-400 nextImage")}>
-        <Image width="" height="" src={image} quality={100} objectFit="contain" className="" />
+        <Image alt={name} src={image} quality={100} objectFit="contain" className="" placeholder="blur" />
       </div>
       <div
         className={classNames("flex flex-col flex-1 space-y-6 ", {
@@ -45,10 +45,7 @@ const ProjectCardBig: FC<Props> = ({
         </div>
         <div className="flex space-x-4 text-gray-300">
           <FiGithub className="w-6 h-6 cursor-pointer" onClick={() => openLink(github_url)} />
-          <FiExternalLink
-            className="w-6 h-6 cursor-pointer"
-            onClick={() => openLink(deployed_url)}
-          />
+          <FiExternalLink className="w-6 h-6 cursor-pointer" onClick={() => openLink(deployed_url)} />
         </div>
       </div>
     </motion.div>

@@ -7,6 +7,9 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  background-color: #040404;
+}
 
 .direction-rtl {
   direction: rtl;

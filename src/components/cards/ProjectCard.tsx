@@ -6,14 +6,7 @@ import { AiOutlineFolder } from "react-icons/ai";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { fadeIn } from "@libs/variants";
 
-const ProjectCard: FC<IProject> = ({
-  deployed_url,
-  category,
-  points,
-  github_url,
-  key_techs,
-  name,
-}) => {
+const ProjectCard: FC<IProject> = ({ deployed_url, category, points, github_url, key_techs, name }) => {
   const openLink = (url: string) => {
     window.open(url, "_blank");
   };
@@ -28,10 +21,7 @@ const ProjectCard: FC<IProject> = ({
         <AiOutlineFolder className="w-10 h-10 text-green-400" />
         <div className="flex space-x-4 text-gray-300">
           <FiGithub className="w-6 h-6 cursor-pointer" onClick={() => openLink(github_url)} />
-          <FiExternalLink
-            className="w-6 h-6 cursor-pointer"
-            onClick={() => openLink(deployed_url)}
-          />
+          <FiExternalLink className="w-6 h-6 cursor-pointer" onClick={() => openLink(deployed_url)} />
         </div>
       </div>
       <h2 className="text-xl">{name}</h2>

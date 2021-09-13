@@ -13,13 +13,7 @@ const AnimateWhenVisible = ({ children, variants }) => {
   }, [controls, inView]);
 
   return (
-    <motion.div
-      ref={ref}
-      animate={controls}
-      initial="initial"
-      //   transition={transition}
-      variants={variants}
-    >
+    <motion.div ref={ref} animate={controls} initial="initial" variants={variants}>
       {children}
     </motion.div>
   );

@@ -21,7 +21,7 @@ const YouTubeCard: FC<Youtube> = ({ title, image, likes, youtubeLink, views }) =
         <FiExternalLink className="w-6 h-6 cursor-pointer" onClick={() => openLink(youtubeLink)} />
       </div>
       <div className="border border-gray-700">
-        <Image src={image} objectFit="cover" />
+        <Image src={image} objectFit="cover" alt="youtube card" />
       </div>
       <h2 className="text-lg">{title}</h2>
 

@@ -34,8 +34,11 @@ export const fadeIn = (direction = "up") => {
 };
 
 export const textContainer: Variants = {
-  initial: {},
+  initial: {
+    opacity: 0,
+  },
   animate: {
+    opacity: 1,
     transition: {
       delayChildren: 0.2,
       staggerChildren: 0.4,

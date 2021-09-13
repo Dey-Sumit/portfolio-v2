@@ -2,11 +2,28 @@ import { GiTie } from "react-icons/gi";
 import { motion } from "framer-motion";
 import { mapAnimation, fadeIn, textContainer, pathVariants } from "@libs/variants";
 import { BsFileCode } from "react-icons/bs";
+import { RiArrowDownSLine } from "react-icons/ri";
 import { Map } from "@components/cards";
 
 const HeroSection = () => {
   return (
-    <div id="hero" className="grid grid-cols-5 px-5 py-10 mt-0 md:pt-16 h-[90vh]">
+    <div id="hero" className="grid grid-cols-5 px-5 py-10 mt-0 md:pt-16 h-[98vh] relative">
+      <motion.span
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          y: [10, 0, 10],
+          transition: {
+            delay: 1,
+            duration: 2,
+            ease: "linear",
+            repeat: Infinity,
+          },
+        }}
+        className="absolute -translate-x-1/2 bottom-12 left-1/2"
+      >
+        <RiArrowDownSLine className="w-6 h-6" />
+      </motion.span>
       <div className="grid place-items-center col-span-full md:col-span-3">
         <motion.div
           className="flex flex-col justify-center "
@@ -14,16 +31,10 @@ const HeroSection = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.p
-            variants={fadeIn("up")}
-            className="pl-1 mb-1 text-base font-medium text-gray-300"
-          >
+          <motion.p variants={fadeIn("up")} className="pl-1 mb-1 text-base font-medium text-gray-300">
             Full Stack Web Developer
           </motion.p>
-          <motion.h1
-            variants={fadeIn("up")}
-            className="mb-4 text-5xl font-semibold sm:text-7xl md:text-8xl"
-          >
+          <motion.h1 variants={fadeIn("up")} className="mb-4 text-5xl font-semibold sm:text-7xl md:text-8xl">
             Sumit <span className="text-black text-stroke">Dey</span>{" "}
           </motion.h1>
           {/* / YouTuber@BackbenchCoder */}

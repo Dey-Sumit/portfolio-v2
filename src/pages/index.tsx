@@ -1,4 +1,6 @@
 import { SplashScreen } from "@components/layouts";
+import Head from "next/head";
+
 import {
   AboutSection,
   ContactSection,
@@ -11,6 +13,9 @@ import {
 const HomePage = () => {
   return (
     <>
+      <Head>
+        <title>Sumit Dey | Web Developer | portfolio </title>
+      </Head>
       <SplashScreen />
       <HeroSection />
       <AboutSection />
