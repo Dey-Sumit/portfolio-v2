@@ -16,14 +16,14 @@ const ContactSection = () => {
       <AnimateWhenVisible variants={textContainer}>
         <motion.div variants={textContainer} className="flex items-center justify-center space-x-6">
           <motion.span
-            onClick={() => openLink("linkedin.com/in/code-sumit")}
+            onClick={() => openLink("https://www.linkedin.com/in/code-sumit/")}
             variants={fadeIn()}
             className="p-4 border border-green-400 rounded-full"
           >
             <FaLinkedinIn className="w-4 h-4 md:w-6 md:h-6 " />
           </motion.span>{" "}
           <motion.span
-            onClick={() => openLink("twitter.com/backbench_coder")}
+            onClick={() => openLink("https://www.twitter.com/backbench_coder")}
             variants={fadeIn()}
             className="p-4 border border-green-400 rounded-full"
           >
