@@ -133,7 +133,7 @@ export const youtubeVideos: Youtube[] = [
     image: portfolio,
     youtubeLink: "https://youtu.be/atebfXxl9B4",
     views: "10k+",
-    likes: "100%",
+    likes: "99%",
   },
   {
     id: 3,
