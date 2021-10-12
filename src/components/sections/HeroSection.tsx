@@ -1,7 +1,7 @@
-import { GiTie } from "react-icons/gi";
 import { motion } from "framer-motion";
 import { mapAnimation, fadeIn, textContainer, pathVariants } from "@libs/variants";
 import { BsFileCode } from "react-icons/bs";
+import { GiTie } from "react-icons/gi";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { Map } from "@components/cards";
 

@@ -39,7 +39,7 @@ export const projects: Project[] = [
     id: 3,
     name: "Not YouTube : YouTube Clone",
     image: youTube,
-    deployed_url: "https://not-utube.web.app/",
+    deployed_url: "https://not-yt.web.app/",
     github_url: "https://github.com/Dey-Sumit/youtube-clone-tutorial-up",
     category: ["react"],
     points: [
@@ -78,16 +78,16 @@ export const projects: Project[] = [
   },
   {
     id: 6,
-    name: "Football App",
+    name: "Los-Spotify",
 
-    deployed_url: "https://o-my-goal.web.app/",
-    github_url: "https://github.com/Dey-Sumit/football-app",
-    category: ["react"],
+    deployed_url: "https://los-spotify.vercel.app",
+    github_url: "https://github.com/Dey-Sumit/los-spotify-next",
+    category: ["react","Next"],
     points: [
-      " • O my goal replica where an user can keep an eye on his favorite club",
-      " • This app will keep providing all the statistics of that club , users can group chat",
+      " • Spotify Api in action",
+      " • This app will keep providing all the data of your spotify account",
     ],
-    key_techs: ["React", "Redux", "Firebase", "API"],
+    key_techs: ["React","API"],
   },
 ];
 
