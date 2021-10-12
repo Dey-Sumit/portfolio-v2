@@ -89,6 +89,19 @@ export const projects: Project[] = [
     ],
     key_techs: ["React","API"],
   },
+  {
+    id: 7,
+    name: "Postwoman",
+
+    deployed_url: "hpostwoman-sandy.vercel.app",
+    github_url: "https://github.com/Dey-Sumit/postwoman-web-app-react",
+    category: ["react","next"],
+    points: [
+      " • Http API Client like postman",
+      " • User can create new tab, make requests , see response",
+    ],
+    key_techs: ["React","axios","Next"],
+  },
 ];
 
 export const experiences: Experience[] = [
