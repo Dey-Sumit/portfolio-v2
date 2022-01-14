@@ -82,12 +82,9 @@ export const projects: Project[] = [
 
     deployed_url: "https://los-spotify.vercel.app",
     github_url: "https://github.com/Dey-Sumit/los-spotify-next",
-    category: ["react","Next"],
-    points: [
-      " • Spotify Api in action",
-      " • This app will keep providing all the data of your spotify account",
-    ],
-    key_techs: ["React","API"],
+    category: ["react", "next"],
+    points: [" • Spotify Api in action", " • This app will keep providing all the data of your spotify account"],
+    key_techs: ["React", "API"],
   },
   {
     id: 7,
@@ -95,16 +92,19 @@ export const projects: Project[] = [
 
     deployed_url: "hpostwoman-sandy.vercel.app",
     github_url: "https://github.com/Dey-Sumit/postwoman-web-app-react",
-    category: ["react","next"],
-    points: [
-      " • Http API Client like postman",
-      " • User can create new tab, make requests , see response",
-    ],
-    key_techs: ["React","axios","Next"],
+    category: ["react", "next"],
+    points: [" • Http API Client like postman", " • User can create new tab, make requests , see response"],
+    key_techs: ["React", "axios", "Next"],
   },
 ];
 
 export const experiences: Experience[] = [
+  {
+    company: "betterhalf.ai",
+    jobTitle: "Frontend Developer ",
+    timeline: "Oct 2021 - Present",
+    points: ["Working as a full time React & React Native Developer", "I got this job without being interviewed!!!"],
+  },
   {
     company: "TCS",
     jobTitle: "Frontend Developer Intern",
@@ -137,7 +137,7 @@ export const youtubeVideos: Youtube[] = [
     title: "YouTube Clone using React, Redux & YT API",
     image: youtubeClone,
     youtubeLink: "https://youtu.be/Mos5QJAje28",
-    views: "25k+",
+    views: "40k+",
     likes: "95%",
   },
   {
@@ -145,7 +145,7 @@ export const youtubeVideos: Youtube[] = [
     title: "A+ Developer Portfolio using Next Js , Tailwind and TypeScript",
     image: portfolio,
     youtubeLink: "https://youtu.be/atebfXxl9B4",
-    views: "10k+",
+    views: "22k+",
     likes: "99%",
   },
   {

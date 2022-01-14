@@ -19,14 +19,23 @@ export const pathVariants: Variants = {
 export const fadeIn = (direction = "up") => {
   return {
     initial: {
-      y: direction === "down" ? -40 : 20,
+      y: direction === "down" ? -40 : 30,
       opacity: 0,
     },
     animate: {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.5,
+        duration: 0.4,
+        ease: "easeInOut",
+      },
+    },
+    exit: {
+      //  y: direction === "down" ? -40 : 30,
+      opacity: 0,
+      transition: {
+        delay: 10,
+        //  duration: 0.4,
         ease: "easeInOut",
       },
     },
@@ -40,8 +49,8 @@ export const textContainer: Variants = {
   animate: {
     opacity: 1,
     transition: {
-      delayChildren: 0.2,
-      staggerChildren: 0.4,
+      delayChildren: 0.4,
+      staggerChildren: 0.3,
     },
   },
 };
