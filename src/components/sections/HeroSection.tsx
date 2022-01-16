@@ -1,5 +1,3 @@
-import abstract from "@public/images/abstract.png";
-import Image from "next/image";
 import { RiArrowDownSLine } from "react-icons/ri";
 
 import { AnimatePresence, motion } from "framer-motion";
